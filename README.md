@@ -1,6 +1,7 @@
 **Password Cracker - Fuerza Bruta en Python**
 
 **Descripción**
+
 Este proyecto contiene tres scripts en Python que realizan ataques de fuerza bruta simples para adivinar contraseñas. Cada script emplea un enfoque diferente, desde la adivinación de contraseñas con caracteres alfabéticos hasta contraseñas numéricas mediante búsqueda secuencial o aleatoria.
 
 ⚠️ **Advertencia:** Estos scripts deben utilizarse con fines educativos o en entornos controlados donde tengas autorización explícita para realizar pruebas de seguridad. El uso no autorizado de técnicas de cracking es ilegal.
