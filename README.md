@@ -1,42 +1,60 @@
-Este es un script de Python que realiza ataques de fuerza bruta simples para descifrar contraseñas. Utiliza un diccionario de contraseñas o genera combinaciones de caracteres para probarlas contra una función de autenticación.
-⚠️ Advertencia: Este programa debe ser utilizado únicamente con fines educativos o en entornos controlados donde tengas permiso explícito para realizar pruebas de seguridad.
+**Password Cracker - Fuerza Bruta en Python**
 
-**Características**
-Soporte para ataques de fuerza bruta utilizando un diccionario de contraseñas.
-Generación de combinaciones de caracteres (si no se usa un diccionario).
-Configurable para atacar diferentes tipos de autenticación (por ejemplo, hash de contraseñas).
+**Descripción**
+Este proyecto contiene tres scripts en Python que realizan ataques de fuerza bruta simples para adivinar contraseñas. Cada script emplea un enfoque diferente, desde la adivinación de contraseñas con caracteres alfabéticos hasta contraseñas numéricas mediante búsqueda secuencial o aleatoria.
+
+⚠️ **Advertencia:** Estos scripts deben utilizarse con fines educativos o en entornos controlados donde tengas autorización explícita para realizar pruebas de seguridad. El uso no autorizado de técnicas de cracking es ilegal.
+
+**Scripts Incluidos**
+1. Adivinación de Contraseñas con Caracteres Minúsculas
+Este script intenta adivinar una contraseña compuesta por caracteres alfanuméricos en minúscula (a-z, 0-9). Usa combinaciones aleatorias hasta que adivina la longitud y el contenido de la contraseña ingresada.
+
+**Ejecución:**
+python cracker_alpha.py
+El script solicita la contraseña como entrada, y luego prueba diferentes combinaciones aleatorias hasta encontrarla.
+
+Ejemplo de uso:
+Ingresá la contraseña: clave123
+La contraseña es clave123
+
+2. Adivinación Secuencial de Contraseñas Numéricas
+Este script realiza un ataque de fuerza bruta secuencial, incrementando el número hasta encontrar la contraseña numérica ingresada.
+
+Ejecución:
+python cracker_secuencial.py
+El script solicita una contraseña numérica como entrada y prueba todas las combinaciones desde 0 hasta el número ingresado.
+
+Ejemplo de uso:
+Input a number that is a password: 1234
+La contraseña es 1234
+
+3. Adivinación Aleatoria de Contraseñas Numéricas
+Este script intenta adivinar contraseñas numéricas generando valores aleatorios dentro del rango 0 a 999999.
+
+Ejecución:
+python cracker_aleatorio.py
+El script pide una contraseña numérica e intenta adivinarla mediante números aleatorios generados hasta que encuentra la correcta.
+
+Ejemplo de uso:
+Contraseña: 56789
+La contraseña es 56789
+
+**Requisitos**
+Este proyecto requiere la instalación de Python 3.x. No es necesario instalar bibliotecas adicionales, ya que se utilizan solo bibliotecas estándar como random.
 
 **Instalación**
 Clona este repositorio en tu máquina local:
-bash
-Copiar código
-git clone https://github.com/tuusuario/password-cracker.git
+git clone https://github.com/natuska26/password-cracker.git
+
 Navega al directorio del proyecto:
-bash
-Copiar código
 cd password-cracker
-Instala las dependencias necesarias (si las hay) con:
-bash
-Copiar código
-pip install -r requirements.txt
-Uso
-Asegúrate de tener un archivo de diccionario de contraseñas (passwords.txt) o define las reglas de generación de contraseñas dentro del script.
-Ejecuta el programa:
-bash
-Copiar código
-python password_cracker.py
-Opciones de uso:
---dict para especificar un archivo de diccionario.
---hash para especificar el hash de la contraseña a atacar.
-Ejemplo:
-bash
-Copiar código
-python password_cracker.py --dict passwords.txt --hash <hash_a_descifrar>
-Uso Ético
-Este proyecto debe ser utilizado únicamente para propósitos educativos o pruebas en sistemas donde se tiene autorización explícita. El uso malintencionado de este script para comprometer la seguridad de sistemas sin permiso es ilegal y contrario a los principios de ciberseguridad.
 
-Contribuciones
-Las contribuciones son bienvenidas. Si tienes ideas o mejoras para el proyecto, no dudes en hacer un fork y enviar un pull request.
+**Uso**
+Para ejecutar los scripts, simplemente utiliza python seguido del nombre del script. Asegúrate de ingresar contraseñas que sigan el formato esperado por cada script (alfanuméricas minúsculas o numéricas).
 
-Licencia
+**Uso Ético**
+Este software está destinado a fines educativos y para probar la seguridad de sistemas propios o de terceros con autorización explícita. El uso malicioso para vulnerar sistemas sin consentimiento está prohibido y es ilegal.
+
+**Licencia**
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+
