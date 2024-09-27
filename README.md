@@ -6,8 +6,7 @@ Este proyecto contiene tres scripts en Python que realizan ataques de fuerza bru
 ⚠️ **Advertencia:** Estos scripts deben utilizarse con fines educativos o en entornos controlados donde tengas autorización explícita para realizar pruebas de seguridad. El uso no autorizado de técnicas de cracking es ilegal.
 
 **Scripts Incluidos**
-1. Adivinación de Contraseñas con Caracteres Minúsculas
-Este script intenta adivinar una contraseña compuesta por caracteres alfanuméricos en minúscula (a-z, 0-9). Usa combinaciones aleatorias hasta que adivina la longitud y el contenido de la contraseña ingresada.
+1. Adivinación de Contraseñas con Caracteres Minúsculas: Este script intenta adivinar una contraseña compuesta por caracteres alfanuméricos en minúscula (a-z, 0-9). Usa combinaciones aleatorias hasta que adivina la longitud y el contenido de la contraseña ingresada.
 
 **Ejecución:**
 python cracker_alpha.py
@@ -17,8 +16,7 @@ Ejemplo de uso:
 Ingresá la contraseña: clave123
 La contraseña es clave123
 
-2. Adivinación Secuencial de Contraseñas Numéricas
-Este script realiza un ataque de fuerza bruta secuencial, incrementando el número hasta encontrar la contraseña numérica ingresada.
+2. Adivinación Secuencial de Contraseñas Numéricas: Este script realiza un ataque de fuerza bruta secuencial, incrementando el número hasta encontrar la contraseña numérica ingresada.
 
 Ejecución:
 python cracker_secuencial.py
@@ -28,8 +26,7 @@ Ejemplo de uso:
 Input a number that is a password: 1234
 La contraseña es 1234
 
-3. Adivinación Aleatoria de Contraseñas Numéricas
-Este script intenta adivinar contraseñas numéricas generando valores aleatorios dentro del rango 0 a 999999.
+3. Adivinación Aleatoria de Contraseñas Numéricas: Este script intenta adivinar contraseñas numéricas generando valores aleatorios dentro del rango 0 a 999999.
 
 Ejecución:
 python cracker_aleatorio.py
